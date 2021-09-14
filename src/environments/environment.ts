@@ -18,7 +18,7 @@ export const environment1 = {
   
   characters: {
     spreadsheetId: '1ljwQ4MN_WuFEZiW8dkt96NZfdh3ku7O2AxKsNbmm79w',
-    worksheetName: 'Sheet6',
+    worksheetName: 'BattingStats',
   },
 };
 // https://docs.google.com/spreadsheets/d/1ljwQ4MN_WuFEZiW8dkt96NZfdh3ku7O2AxKsNbmm79w/edit?usp=sharing
