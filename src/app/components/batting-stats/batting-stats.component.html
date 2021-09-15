@@ -1,0 +1,80 @@
+<carousel [itemsPerSlide]="3"
+          [singleSlideOffset]="false"
+          [noWrap]="true"
+          >
+    <slide>
+        <div class="text-center py-5 bg-dark text-white">
+            <h2>Most runs 1</h2>
+            <div class="lead col-md">
+                <div *ngIf="sheet6$ | async as sheet6">
+                    <div *ngFor="let sheet of sheet6">
+                        <div class="d-flex justify-content-between" *ngIf="sheet.runs">
+                            <div>
+                                {{sheet.name}}
+                            </div>
+                            <div>
+                                {{sheet.runs}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide>
+        <div class="text-center py-5 bg-dark text-white">
+            <h2>Most runs 2</h2>
+            <div class="lead col-md">
+                <div *ngIf="sheet6$ | async as sheet6">
+                    <div *ngFor="let sheet of sheet6">
+                        <div class="d-flex justify-content-between" *ngIf="sheet.runs">
+                            <div>
+                                {{sheet.name}}
+                            </div>
+                            <div>
+                                {{sheet.runs}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide>
+        <div class="text-center py-5 bg-dark text-white">
+            <h2>Most runs 3</h2>
+            <div class="lead col-md">
+                <div *ngIf="sheet6$ | async as sheet6">
+                    <div *ngFor="let sheet of sheet6">
+                        <div class="d-flex justify-content-between" *ngIf="sheet.runs">
+                            <div>
+                                {{sheet.name}}
+                            </div>
+                            <div>
+                                {{sheet.runs}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <!-- <slide>
+        <div class="text-center py-5 bg-dark text-white">
+            <h2>Second custom content</h2>
+            <div class="lead">
+                <h3>Second slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+    </slide>
+    <slide>
+        <div class="text-center py-5 bg-dark text-white">
+            <h2>Third custom content</h2>
+            <div class="lead">
+                <h3>Third slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum. </p>
+            </div>
+        </div>
+    </slide> -->
+</carousel>

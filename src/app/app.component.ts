@@ -29,29 +29,5 @@ export class AppComponent implements OnInit {
       characterAttributesMapping,
       'Active'
     );
-
-    // Test below this
-    this.googleSheetsDbService
-      .getActive<Character>(
-        environment.characters.spreadsheetId,
-        environment.characters.worksheetName,
-        characterAttributesMapping,
-        'Active'
-      )
-      .subscribe(val => console.log('ennavo po', val));
-
-    this.sheet6$ = this.googleSheetsDbService.get<any>(
-      environment1.characters.spreadsheetId,
-      environment1.characters.worksheetName,
-      sheet6AttributesMapping
-    );
-
-    this.googleSheetsDbService
-      .get<any>(
-        environment1.characters.spreadsheetId,
-        environment1.characters.worksheetName,
-        sheet6AttributesMapping
-      )
-      .subscribe(val => console.log('test', val));
   }
 }
